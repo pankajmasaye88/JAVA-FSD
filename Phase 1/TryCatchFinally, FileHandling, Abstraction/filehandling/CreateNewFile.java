@@ -1,4 +1,4 @@
-package com.simplilearn.filehandling;
+	package com.simplilearn.filehandling;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,7 +25,7 @@ public class CreateNewFile {
 		
 		//write data to file
 		FileWriter writer= new FileWriter(file);
-		writer.write("Welcome to file handling !");
+		writer.write("Welcome to file handling papapas!");
 		writer.close();
 	}
 	
@@ -48,9 +48,9 @@ public class CreateNewFile {
 	}
 	public static void main(String[] args) {
 		try {
-			//CreateFileUsingFileClass();
+			CreateFileUsingFileClass();
 			//createFileUsingOutputStream();
-			createFileUsingNIO();
+			//createFileUsingNIO();
 		} 
 		catch (IOException e) {
 			System.out.println(e);
