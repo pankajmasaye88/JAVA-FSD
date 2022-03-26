@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+    function display(){
+    if(true){
+    var item1 = 'apple'; //exist in function scope
+    const item2 = 'ball'; //exist in block scope
+    let item3 = 'cloud'; //exist in block scope
+    }
+    console.log(item1);
+    console.log(item2);
+    console.log(item3);
+    }
+    display();
+    //result:
+    //apple
+    //error: item2 is not defined
+    //error: item3 is not defined
+
+</script>
+</body>
+
+</html>
