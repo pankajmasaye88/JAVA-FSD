@@ -1,0 +1,21 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <ul class="nav navbar-nav float-left" routerLinkActive="active">
+      <li class="nav-item">
+        <h3>Pankaj's Portfolio</h3>
+        <a class="btn" routerLink="/">My PortFolio</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav " style="margin-left: 70%" routerLinkActive="active">
+      <li class="nav-item"><a class=" btn" routerLink="/signin" style="margin: 5px;">Sign In</a></li>
+      <li class="nav-item"><a class="btn" routerLink="/signup" style="margin: 5px">Sign Up</a> </li>
+      <li class="nav-item"><a class="btn" routerLink="/contactus" style="margin: 5px">Contact Me</a> </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
