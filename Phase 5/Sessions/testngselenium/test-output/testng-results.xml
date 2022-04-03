@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-03T10:25:31 IST" name="MySuite" finished-at="2022-04-03T10:26:47 IST" duration-ms="76216">
+    <groups>
+      <group name="firefox">
+        <method signature="GroupTest.launchFireFox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" name="launchFireFox" class="com.simplilearn.testngselenium.GroupTest"/>
+        <method signature="GroupTest.loginWithFirefox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" name="loginWithFirefox" class="com.simplilearn.testngselenium.GroupTest"/>
+      </group> <!-- firefox -->
+      <group name="Chrome">
+        <method signature="GroupTest.launchChrome()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" name="launchChrome" class="com.simplilearn.testngselenium.GroupTest"/>
+        <method signature="GroupTest.login()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" name="login" class="com.simplilearn.testngselenium.GroupTest"/>
+      </group> <!-- Chrome -->
+      <group name="FB">
+        <method signature="FacebookTest.launchFb()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" name="launchFb" class="com.simplilearn.testngselenium.FacebookTest"/>
+        <method signature="FacebookTest.login()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" name="login" class="com.simplilearn.testngselenium.FacebookTest"/>
+      </group> <!-- FB -->
+    </groups>
+    <test started-at="2022-04-03T10:25:31 IST" name="MyTest" finished-at="2022-04-03T10:26:47 IST" duration-ms="76216">
+      <class name="com.simplilearn.testngselenium.FacebookTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" started-at="2022-04-03T10:25:57 IST" name="beforeMethod" finished-at="2022-04-03T10:26:02 IST" duration-ms="4999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="launchFb()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" started-at="2022-04-03T10:26:02 IST" name="launchFb" finished-at="2022-04-03T10:26:10 IST" duration-ms="7585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFb -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" started-at="2022-04-03T10:26:10 IST" name="afterMethod" finished-at="2022-04-03T10:26:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" started-at="2022-04-03T10:26:10 IST" name="beforeMethod" finished-at="2022-04-03T10:26:13 IST" duration-ms="3633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" started-at="2022-04-03T10:26:13 IST" name="login" finished-at="2022-04-03T10:26:14 IST" depends-on-methods="com.simplilearn.testngselenium.FacebookTest.launchFb" duration-ms="921" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: MicrosoftEdge=100.0.1185.29)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-SDGPMUU', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [73e2ede1088600ac170e89f6b8afd254, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 100.0.1185.29, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54249}, msedge: {msedgedriverVersion: 100.0.1185.29 (1feddedadb21..., userDataDir: C:\Users\pankaj\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54249/devtoo..., se:cdpVersion: 100.0.1185.29, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73e2ede1088600ac170e89f6b8afd254]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: MicrosoftEdge=100.0.1185.29)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-SDGPMUU', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [73e2ede1088600ac170e89f6b8afd254, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 100.0.1185.29, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54249}, msedge: {msedgedriverVersion: 100.0.1185.29 (1feddedadb21..., userDataDir: C:\Users\pankaj\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54249/devtoo..., se:cdpVersion: 100.0.1185.29, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73e2ede1088600ac170e89f6b8afd254
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at com.simplilearn.testngselenium.FacebookTest.login(FacebookTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@4dbb42b7]" started-at="2022-04-03T10:26:14 IST" name="afterMethod" finished-at="2022-04-03T10:26:14 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.simplilearn.testngselenium.FacebookTest -->
+      <class name="com.simplilearn.testngselenium.GroupTest">
+        <test-method signature="launchChrome()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" started-at="2022-04-03T10:25:31 IST" name="launchChrome" finished-at="2022-04-03T10:25:42 IST" duration-ms="11048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchChrome -->
+        <test-method signature="launchFireFox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" started-at="2022-04-03T10:25:42 IST" name="launchFireFox" finished-at="2022-04-03T10:25:56 IST" duration-ms="14051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFireFox -->
+        <test-method signature="login()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" started-at="2022-04-03T10:25:56 IST" name="login" finished-at="2022-04-03T10:25:57 IST" depends-on-methods="com.simplilearn.testngselenium.GroupTest.launchChrome" duration-ms="923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="loginWithFirefox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@5a56cdac]" started-at="2022-04-03T10:25:57 IST" name="loginWithFirefox" finished-at="2022-04-03T10:25:57 IST" depends-on-methods="com.simplilearn.testngselenium.GroupTest.launchFireFox" duration-ms="116" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-SDGPMUU', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [96bfcfe4c2e1479dde0c49df5106843a, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 100.0.1185.29, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54171}, msedge: {msedgedriverVersion: 100.0.1185.29 (1feddedadb21..., userDataDir: C:\Users\pankaj\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54171/devtoo..., se:cdpVersion: 100.0.1185.29, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96bfcfe4c2e1479dde0c49df5106843a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-SDGPMUU', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [96bfcfe4c2e1479dde0c49df5106843a, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 100.0.1185.29, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54171}, msedge: {msedgedriverVersion: 100.0.1185.29 (1feddedadb21..., userDataDir: C:\Users\pankaj\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54171/devtoo..., se:cdpVersion: 100.0.1185.29, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96bfcfe4c2e1479dde0c49df5106843a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at com.simplilearn.testngselenium.GroupTest.loginWithFirefox(GroupTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithFirefox -->
+      </class> <!-- com.simplilearn.testngselenium.GroupTest -->
+      <class name="com.simplilearn.testngselenium.SimpleTestNG">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:25:31 IST" name="beforeSuite" finished-at="2022-04-03T10:25:31 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:25:31 IST" name="beforeTest" finished-at="2022-04-03T10:25:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="beforeClass" finished-at="2022-04-03T10:26:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="beforeMethod" finished-at="2022-04-03T10:26:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="method1()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="method1" finished-at="2022-04-03T10:26:47 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="afterMethod" finished-at="2022-04-03T10:26:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="beforeMethod" finished-at="2022-04-03T10:26:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="method2()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="method2" finished-at="2022-04-03T10:26:47 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="afterMethod" finished-at="2022-04-03T10:26:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="afterClass" finished-at="2022-04-03T10:26:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="afterTest" finished-at="2022-04-03T10:26:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@273e7444]" started-at="2022-04-03T10:26:47 IST" name="afterSuite" finished-at="2022-04-03T10:26:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.simplilearn.testngselenium.SimpleTestNG -->
+      <class name="com.simplilearn.testngselenium.TestNg1">
+        <test-method signature="testTrue()[pri:0, instance:com.simplilearn.testngselenium.TestNg1@13fd2ccd]" started-at="2022-04-03T10:26:47 IST" name="testTrue" finished-at="2022-04-03T10:26:47 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrue -->
+      </class> <!-- com.simplilearn.testngselenium.TestNg1 -->
+      <class name="com.simplilearn.testngselenium.AssersionsDemo">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@48aca48b]" started-at="2022-04-03T10:26:14 IST" name="beforeMethod" finished-at="2022-04-03T10:26:22 IST" duration-ms="7801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@48aca48b]" started-at="2022-04-03T10:26:22 IST" name="login" finished-at="2022-04-03T10:26:29 IST" duration-ms="7151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@48aca48b]" started-at="2022-04-03T10:26:29 IST" name="afterMethod" finished-at="2022-04-03T10:26:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@48aca48b]" started-at="2022-04-03T10:26:29 IST" name="beforeMethod" finished-at="2022-04-03T10:26:38 IST" duration-ms="9267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="titleTest()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@48aca48b]" started-at="2022-04-03T10:26:38 IST" name="titleTest" finished-at="2022-04-03T10:26:47 IST" duration-ms="8549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@48aca48b]" started-at="2022-04-03T10:26:47 IST" name="afterMethod" finished-at="2022-04-03T10:26:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.simplilearn.testngselenium.AssersionsDemo -->
+    </test> <!-- MyTest -->
+  </suite> <!-- MySuite -->
+</testng-results>
